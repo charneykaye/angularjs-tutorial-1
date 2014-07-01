@@ -8,22 +8,22 @@
 <!--[if gt IE 8]><!-->
 <html class="no-js"> <!--<![endif]-->
 <head>
+
+    <!-- Meta-Information -->
+    <title>ACME Inc.</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title></title>
-    <meta name="description" content="">
+    <meta name="description" content="ACME Inc.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Vendor: Bootstrap Stylesheets http://getbootstrap.com -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <style>
-        body {
-            padding-top: 50px;
-            padding-bottom: 20px;
-        }
-    </style>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="css/main.css">
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Our Website CSS Styles -->
+    <link rel="stylesheet" href="css/main.css">
+
 </head>
 <body ng-app="tutorialWebApp">
 <!--[if lt IE 7]>
@@ -31,19 +31,20 @@
     your browser</a> to improve your experience.</p>
 <![endif]-->
 
-<div ng-include="partials/_navbar.html"></div>
+<!-- Our Website Content Goes Here -->
+<div ng-include='"partials/_header.html"'></div>
+<div ng-view></div>
+<div ng-include='"partials/_footer.html"'></div>
 
-<!-- Add your site or application content here -->
-<div ui-view=""></div>
-
-<div ng-include="partials/_footer.html"></div>
-
+<!-- Vendor: Javascripts -->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
-<!-- Include Angular, followed by our custom Javascripts -->
+<!-- Vendor: Angular, followed by our custom Javascripts -->
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular-route.min.js"></script>
+
+<!-- Our Website Javascripts -->
 <script src="js/main.js"></script>
 
 </body>
