@@ -17,6 +17,11 @@ body {
     padding-bottom: 20px;
 }
 
+.dropdown {
+    cursor:pointer;
+}
+
+
 .img-home-portfolio,
 .img-customer,
 .portfolio-item {

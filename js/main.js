@@ -31,13 +31,6 @@ app.config(['$routeProvider', function ($routeProvider) {
 }]);
 
 /**
- * Controls the Navigation
- */
-app.controller('NavCtrl', function (/* $scope, $location, $http */) {
-  console.log("Navigation Controller reporting for duty.");
-});
-
-/**
  * Controls the Blog
  */
 app.controller('BlogCtrl', function (/* $scope, $location, $http */) {
